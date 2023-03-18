@@ -32,7 +32,8 @@ ip nat inside source list <acl_num> interface <int> overload
 
 ```
 ip nat inside source static <@local> <@global>
-# pour naté une seule machine
+# pour naté une seule machine sur tous ses ports
 
-ip nat inside source static <tcp/udp> <@ip_locale_equip> <port_local_utilisé> <@globale> <port_global_donné_sur_routeurz>
+ip nat inside source static <tcp/udp> <@ip_locale_equip> <port_local_utilisé> <@globale> <port_global_donné_sur_routeur>
+# nat une machine avec un port spécifique, cool pour accéder à son serveur blabla de dehors
 ```

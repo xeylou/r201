@@ -1,21 +1,17 @@
 ## les acl cisco & leur fonctionnement
 
-définissent un ensemble de règles sur un réseau afin de filtrer
-certais flux, au niveau de la couche 3 (ip) ou 4 sur un routeur cisco
+définissent un ensemble de règles sur un réseau afin de filtrer certais flux, au niveau de la couche 3 (ip) ou 4 (tcp/udp) sur un routeur cisco
 
 ### définition vidéo bascou 
 
-peuvent être mises avant la décision de routage ou après au niveau de
-la sortie quand l'interface a été définie
+peuvent être mises avant la décision de routage ou après au niveau de la sortie quand l'interface a été définie. pas de formes de procès ni d'avertissement à l'expéditeur, suppression seule
 
-pas de formes de procès ni d'avertissement à l'expéditeur, suppression seule
+1 unique acl par sens, par interface & par proto. de couche 3 (ipv4 ou ipv6)
 
-1 unique acl par sens & par interface & par proto. de couche 3 (ipv4 ou ipv6)
-
-<condition> <action>
+<condition> <action> 
 <proto> <permit/deny>
 
-lues dans l'ordre, extrêmement important /!\
+**lues dans l'ordre, extrêmement important /!\**
 
 par défaut interdit
 
